@@ -1,5 +1,5 @@
 // ===========================
-// AI Tools Database
+// AI Tools Database with Logo URLs
 // ===========================
 
 const aiTools = [
@@ -12,7 +12,7 @@ const aiTools = [
         pricing: "Free / $20/month",
         rating: 4.9,
         affiliate: "https://openai.com/chatgpt?ref=aitools",
-        image: "🤖"
+        logo: "https://cdn.openai.com/API/docs/images/chatgpt-icon.svg"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const aiTools = [
         pricing: "$10-60/month",
         rating: 4.8,
         affiliate: "https://midjourney.com?ref=aitools",
-        image: "🎨"
+        logo: "https://midjourney.com/favicon-32x32.png"
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const aiTools = [
         pricing: "$10/month or $100/year",
         rating: 4.7,
         affiliate: "https://github.com/features/copilot?ref=aitools",
-        image: "💻"
+        logo: "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ const aiTools = [
         pricing: "Pay per use / $15/month",
         rating: 4.8,
         affiliate: "https://openai.com/dall-e-3?ref=aitools",
-        image: "🖼️"
+        logo: "https://cdn.openai.com/API/docs/images/dall-e.svg"
     },
     {
         id: 5,
@@ -56,7 +56,7 @@ const aiTools = [
         pricing: "$39-125/month",
         rating: 4.6,
         affiliate: "https://www.jasper.ai?ref=aitools",
-        image: "✍️"
+        logo: "https://www.jasper.ai/favicon.ico"
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const aiTools = [
         pricing: "$25-225/month",
         rating: 4.7,
         affiliate: "https://www.synthesia.io?ref=aitools",
-        image: "🎬"
+        logo: "https://www.synthesia.io/favicon.png"
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ const aiTools = [
         pricing: "Free / $12-55/month",
         rating: 4.6,
         affiliate: "https://runwayml.com?ref=aitools",
-        image: "🎥"
+        logo: "https://runwayml.com/favicon.ico"
     },
     {
         id: 8,
@@ -89,7 +89,7 @@ const aiTools = [
         pricing: "Free / $19-299/month",
         rating: 4.5,
         affiliate: "https://murf.ai?ref=aitools",
-        image: "🎙️"
+        logo: "https://murf.ai/favicon.ico"
     },
     {
         id: 9,
@@ -100,7 +100,7 @@ const aiTools = [
         pricing: "$8-10/month (add-on)",
         rating: 4.5,
         affiliate: "https://notion.so?ref=aitools",
-        image: "📝"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"
     },
     {
         id: 10,
@@ -111,7 +111,7 @@ const aiTools = [
         pricing: "Free / $12/month",
         rating: 4.7,
         affiliate: "https://www.grammarly.com?ref=aitools",
-        image: "✅"
+        logo: "https://www.grammarly.com/favicon.ico"
     },
     {
         id: 11,
@@ -122,7 +122,7 @@ const aiTools = [
         pricing: "Free / $49+/month",
         rating: 4.5,
         affiliate: "https://www.copy.ai?ref=aitools",
-        image: "📢"
+        logo: "https://www.copy.ai/favicon.ico"
     },
     {
         id: 12,
@@ -133,7 +133,7 @@ const aiTools = [
         pricing: "Free / $99+/month",
         rating: 4.4,
         affiliate: "https://mixo.io?ref=aitools",
-        image: "🌐"
+        logo: "https://mixo.io/favicon.ico"
     },
     {
         id: 13,
@@ -144,7 +144,7 @@ const aiTools = [
         pricing: "Free",
         rating: 4.6,
         affiliate: "https://stablediffusionweb.com?ref=aitools",
-        image: "🎨"
+        logo: "https://stablediffusionweb.com/favicon.ico"
     },
     {
         id: 14,
@@ -155,7 +155,7 @@ const aiTools = [
         pricing: "Free (with Google account)",
         rating: 4.5,
         affiliate: "https://bard.google.com?ref=aitools",
-        image: "🤖"
+        logo: "https://www.gstatic.com/images/branding/product/1x/bard_logo_3x_v1.svg"
     },
     {
         id: 15,
@@ -166,7 +166,7 @@ const aiTools = [
         pricing: "Free / $25-83/month",
         rating: 4.6,
         affiliate: "https://www.typeform.com?ref=aitools",
-        image: "📊"
+        logo: "https://www.typeform.com/favicon.ico"
     }
 ];
 
@@ -197,6 +197,14 @@ function renderTools(toolsToRender = aiTools) {
 
     toolsToRender.forEach(tool => {
         const toolCard = toolTemplate.content.cloneNode(true);
+        
+        // Add logo
+        const logoImg = toolCard.querySelector('.tool-logo');
+        logoImg.src = tool.logo;
+        logoImg.alt = `${tool.name} logo`;
+        logoImg.onerror = function() {
+            this.style.display = 'none';
+        };
         
         toolCard.querySelector('.tool-name').textContent = tool.name;
         toolCard.querySelector('.tool-category').textContent = capitalizeCategory(tool.category);
@@ -307,7 +315,6 @@ function showReview(tool) {
         3: `GitHub Copilot accelerates coding significantly. It understands context well and suggests relevant code snippets.`,
         4: `DALL-E 3 is one of the best image generators available. The quality is exceptional and instructions are followed precisely.`,
         5: `Jasper is perfect for marketing teams. The templates save time and the content quality is professional.`,
-        // Add more reviews as needed
     };
 
     const reviewText = reviews[tool.id] || `${tool.name} is a great AI tool that delivers excellent results.`;
@@ -320,5 +327,5 @@ function showReview(tool) {
 
 renderTools();
 
-console.log('%c🤖 AI Tools Directory Loaded', 'color: #6366f1; font-size: 16px; font-weight: bold;');
-console.log(`%c${aiTools.length} AI tools ready to explore`, 'color: #8b5cf6; font-size: 14px;');
+console.log('%c🤖 AI Tools Directory v1.5', 'color: #6366f1; font-size: 16px; font-weight: bold;');
+console.log(`%c${aiTools.length} AI tools with logos ready to explore`, 'color: #8b5cf6; font-size: 14px;');
