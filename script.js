@@ -1,5 +1,5 @@
 // ===========================
-// AI Tools Database with Logo URLs
+// AI Tools Database with SVG Logos
 // ===========================
 
 const aiTools = [
@@ -12,7 +12,7 @@ const aiTools = [
         pricing: "Free / $20/month",
         rating: 4.9,
         affiliate: "https://openai.com/chatgpt?ref=aitools",
-        logo: "🤖",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="chatgpt-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#10a37f;stop-opacity:1" /><stop offset="100%" style="stop-color:#1f9672;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#chatgpt-grad)"/><path d="M 50 20 Q 70 20 75 40 Q 80 50 75 60 Q 70 70 50 75 Q 30 70 25 60 Q 20 50 25 40 Q 30 20 50 20" fill="white"/><circle cx="50" cy="50" r="8" fill="#10a37f"/></svg>',
         tags: ["chatbot", "ai", "writing", "coding", "analysis", "openai"]
     },
     {
@@ -24,7 +24,7 @@ const aiTools = [
         pricing: "$10-60/month",
         rating: 4.8,
         affiliate: "https://midjourney.com?ref=aitools",
-        logo: "🎨",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mid-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" /><stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#mid-grad)"/><rect x="25" y="30" width="15" height="20" fill="white" rx="2"/><rect x="45" y="25" width="15" height="25" fill="white" rx="2"/><rect x="65" y="35" width="15" height="15" fill="white" rx="2"/><rect x="25" y="55" width="55" height="3" fill="white"/></svg>',
         tags: ["image", "generation", "art", "creative", "design", "ai-art"]
     },
     {
@@ -36,7 +36,7 @@ const aiTools = [
         pricing: "$10/month or $100/year",
         rating: 4.7,
         affiliate: "https://github.com/features/copilot?ref=aitools",
-        logo: "💻",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="github-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#24292e;stop-opacity:1" /><stop offset="100%" style="stop-color:#161b22;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#github-grad)"/><path d="M 50 25 C 60 25 68 33 68 43 C 68 50 63 56 56 58 C 55 58 54 57 54 56 V 52 C 54 51 55 50 56 50 C 61 50 65 46 65 40 C 65 34 61 30 55 30 C 50 30 46 33 45 37 C 45 37 44 38 43 38 C 42 38 42 37 42 37 C 43 32 47 27 50 25 Z M 40 45 C 38 45 37 47 37 49 C 37 51 38 53 40 53 C 42 53 43 51 43 49 C 43 47 42 45 40 45 Z M 60 45 C 58 45 57 47 57 49 C 57 51 58 53 60 53 C 62 53 63 51 63 49 C 63 47 62 45 60 45 Z" fill="white"/></svg>',
         tags: ["code", "programming", "developer", "github", "autocomplete", "coding-assistant"]
     },
     {
@@ -48,7 +48,7 @@ const aiTools = [
         pricing: "Pay per use / $15/month",
         rating: 4.8,
         affiliate: "https://openai.com/dall-e-3?ref=aitools",
-        logo: "🖼️",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="dalle-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" /><stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#dalle-grad)"/><rect x="20" y="20" width="60" height="60" fill="none" stroke="white" stroke-width="3" rx="4"/><circle cx="35" cy="35" r="6" fill="white"/><path d="M 20 70 L 45 45 L 65 65 L 80 50" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>',
         tags: ["image", "text-to-image", "generation", "openai", "creative", "art"]
     },
     {
@@ -60,7 +60,7 @@ const aiTools = [
         pricing: "$39-125/month",
         rating: 4.6,
         affiliate: "https://www.jasper.ai?ref=aitools",
-        logo: "✍️",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="jasper-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" /><stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#jasper-grad)"/><rect x="30" y="25" width="8" height="50" fill="white" rx="2"/><rect x="42" y="30" width="8" height="45" fill="white" rx="2"/><rect x="54" y="20" width="8" height="55" fill="white" rx="2"/><rect x="66" y="35" width="8" height="40" fill="white" rx="2"/></svg>',
         tags: ["writing", "marketing", "content", "copywriting", "seo", "blog"]
     },
     {
@@ -72,7 +72,7 @@ const aiTools = [
         pricing: "$25-225/month",
         rating: 4.7,
         affiliate: "https://www.synthesia.io?ref=aitools",
-        logo: "🎬",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="synth-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" /><stop offset="100%" style="stop-color:#be185d;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#synth-grad)"/><path d="M 30 40 L 50 30 L 70 40 L 70 65 Q 70 70 65 70 L 35 70 Q 30 70 30 65 Z" fill="white" stroke="white" stroke-width="1"/><circle cx="50" cy="50" r="6" fill="#ec4899"/></svg>',
         tags: ["video", "avatar", "text-to-speech", "tts", "video-generation", "animation"]
     },
     {
@@ -84,7 +84,7 @@ const aiTools = [
         pricing: "Free / $12-55/month",
         rating: 4.6,
         affiliate: "https://runwayml.com?ref=aitools",
-        logo: "🎥",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="runway-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f97316;stop-opacity:1" /><stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#runway-grad)"/><rect x="20" y="30" width="15" height="40" fill="white" rx="2"/><rect x="42" y="25" width="16" height="50" fill="white" rx="2"/><rect x="65" y="35" width="15" height="30" fill="white" rx="2"/></svg>',
         tags: ["video", "editing", "generation", "effects", "motion", "creative"]
     },
     {
@@ -96,7 +96,7 @@ const aiTools = [
         pricing: "Free / $19-299/month",
         rating: 4.5,
         affiliate: "https://murf.ai?ref=aitools",
-        logo: "🎙️",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="murf-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" /><stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#murf-grad)"/><circle cx="50" cy="50" r="8" fill="white"/><path d="M 50 42 Q 58 42 58 50 Q 58 58 50 58" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M 50 38 Q 65 38 65 50 Q 65 62 50 62" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/></svg>',
         tags: ["voice", "audio", "text-to-speech", "voiceover", "tts", "narration"]
     },
     {
@@ -108,7 +108,7 @@ const aiTools = [
         pricing: "$8-10/month (add-on)",
         rating: 4.5,
         affiliate: "https://notion.so?ref=aitools",
-        logo: "📝",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="notion-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#000000;stop-opacity:1" /><stop offset="100%" style="stop-color:#333333;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#notion-grad)"/><g fill="white"><rect x="25" y="25" width="12" height="12" rx="1"/><rect x="40" y="25" width="12" height="12" rx="1"/><rect x="55" y="25" width="12" height="12" rx="1"/><rect x="25" y="42" width="12" height="12" rx="1"/><rect x="40" y="42" width="12" height="12" rx="1"/><rect x="55" y="42" width="12" height="12" rx="1"/><rect x="25" y="59" width="12" height="12" rx="1"/><rect x="40" y="59" width="12" height="12" rx="1"/><rect x="55" y="59" width="12" height="12" rx="1"/></g></svg>',
         tags: ["productivity", "notes", "organization", "writing", "brainstorming", "workspace"]
     },
     {
@@ -120,7 +120,7 @@ const aiTools = [
         pricing: "Free / $12/month",
         rating: 4.7,
         affiliate: "https://www.grammarly.com?ref=aitools",
-        logo: "✅",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="grammarly-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#15803d;stop-opacity:1" /><stop offset="100%" style="stop-color:#166534;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#grammarly-grad)"/><path d="M 50 25 L 65 55 L 55 55 L 60 70 L 40 70 L 45 55 L 35 55 Z" fill="white"/></svg>',
         tags: ["writing", "grammar", "editing", "checker", "plagiarism", "proofreading"]
     },
     {
@@ -132,7 +132,7 @@ const aiTools = [
         pricing: "Free / $49+/month",
         rating: 4.5,
         affiliate: "https://www.copy.ai?ref=aitools",
-        logo: "📢",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="copyai-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#c084fc;stop-opacity:1" /><stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#copyai-grad)"/><rect x="25" y="30" width="25" height="30" fill="white" rx="2" stroke="white" stroke-width="1.5"/><rect x="50" y="40" width="25" height="30" fill="none" stroke="white" stroke-width="2" rx="2"/><path d="M 50 45 L 60 55 L 50 65" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
         tags: ["copywriting", "marketing", "content", "social-media", "email", "sales"]
     },
     {
@@ -144,7 +144,7 @@ const aiTools = [
         pricing: "Free / $99+/month",
         rating: 4.4,
         affiliate: "https://mixo.io?ref=aitools",
-        logo: "🌐",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="mixo-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" /><stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#mixo-grad)"/><path d="M 30 50 Q 40 40 50 40 Q 60 40 70 50 Q 60 60 50 60 Q 40 60 30 50" fill="white" opacity="0.9"/><circle cx="50" cy="50" r="6" fill="#06b6d4"/></svg>',
         tags: ["website", "builder", "no-code", "landing-page", "seo", "cms"]
     },
     {
@@ -156,7 +156,7 @@ const aiTools = [
         pricing: "Free",
         rating: 4.6,
         affiliate: "https://stablediffusionweb.com?ref=aitools",
-        logo: "🎨",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sd-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#a21caf;stop-opacity:1" /><stop offset="100%" style="stop-color:#7e22ce;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#sd-grad)"/><circle cx="40" cy="40" r="12" fill="white" opacity="0.8"/><circle cx="60" cy="40" r="12" fill="white" opacity="0.6"/><circle cx="50" cy="60" r="12" fill="white" opacity="0.7"/></svg>',
         tags: ["image", "generation", "open-source", "art", "free", "customizable"]
     },
     {
@@ -168,7 +168,7 @@ const aiTools = [
         pricing: "Free (with Google account)",
         rating: 4.5,
         affiliate: "https://bard.google.com?ref=aitools",
-        logo: "🤖",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bard-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" /><stop offset="100%" style="stop-color:#d97706;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#bard-grad)"/><path d="M 50 30 Q 65 40 65 50 Q 65 65 50 70 Q 35 65 35 50 Q 35 40 50 30" fill="white"/><path d="M 45 45 L 55 45 M 45 55 L 55 55" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/></svg>',
         tags: ["chatbot", "conversation", "google", "writing", "translation", "ai"]
     },
     {
@@ -180,7 +180,7 @@ const aiTools = [
         pricing: "Free / $25-83/month",
         rating: 4.6,
         affiliate: "https://www.typeform.com?ref=aitools",
-        logo: "📊",
+        logo: '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="typeform-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#262b3a;stop-opacity:1" /><stop offset="100%" style="stop-color:#1a1f2e;stop-opacity:1" /></linearGradient></defs><circle cx="50" cy="50" r="48" fill="url(#typeform-grad)"/><g fill="white"><circle cx="50" cy="35" r="4"/><line x1="50" y1="40" x2="50" y2="55" stroke="white" stroke-width="2"/><circle cx="38" cy="62" r="4"/><circle cx="62" cy="62" r="4"/><line x1="50" y1="55" x2="38" y2="62" stroke="white" stroke-width="2"/><line x1="50" y1="55" x2="62" y2="62" stroke="white" stroke-width="2"/></g></svg>',
         tags: ["survey", "form", "analytics", "data", "insights", "feedback"]
     }
 ];
@@ -257,26 +257,9 @@ function renderTools(toolsToRender = aiTools) {
     toolsToRender.forEach(tool => {
         const toolCard = toolTemplate.content.cloneNode(true);
         
-        // Add logo - check if it's an emoji or URL
+        // Add SVG logo
         const logoContainer = toolCard.querySelector('.tool-logo-container');
-        
-        if (tool.logo.match(/^[\p{Emoji_Presentation}\p{Extended_Pictographic}]/u)) {
-            // It's an emoji - display as text
-            const emojiDiv = document.createElement('div');
-            emojiDiv.style.fontSize = '48px';
-            emojiDiv.style.display = 'flex';
-            emojiDiv.style.alignItems = 'center';
-            emojiDiv.style.justifyContent = 'center';
-            emojiDiv.style.height = '100%';
-            emojiDiv.textContent = tool.logo;
-            logoContainer.innerHTML = '';
-            logoContainer.appendChild(emojiDiv);
-        } else {
-            // It's a URL
-            const logoImg = toolCard.querySelector('.tool-logo');
-            logoImg.src = tool.logo;
-            logoImg.alt = `${tool.name} logo`;
-        }
+        logoContainer.innerHTML = tool.logo;
         
         toolCard.querySelector('.tool-name').textContent = tool.name;
         toolCard.querySelector('.tool-category').textContent = capitalizeCategory(tool.category);
@@ -396,4 +379,4 @@ function showReview(tool) {
 renderTools();
 
 console.log('%c🤖 AI Tools Directory v1.5 - Smart Search Enabled', 'color: #6366f1; font-size: 16px; font-weight: bold;');
-console.log(`%c${aiTools.length} AI tools with intelligent search ready to explore`, 'color: #8b5cf6; font-size: 14px;');
+console.log(`%c${aiTools.length} AI tools with custom SVG logos ready to explore`, 'color: #8b5cf6; font-size: 14px;');
