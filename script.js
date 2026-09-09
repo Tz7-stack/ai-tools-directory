@@ -12,7 +12,7 @@ const aiTools = [
         pricing: "Free / $20/month",
         rating: 4.9,
         affiliate: "https://openai.com/chatgpt?ref=aitools",
-        logo: "https://cdn.openai.com/API/docs/images/chatgpt-icon.svg",
+        logo: "🤖",
         tags: ["chatbot", "ai", "writing", "coding", "analysis", "openai"]
     },
     {
@@ -24,7 +24,7 @@ const aiTools = [
         pricing: "$10-60/month",
         rating: 4.8,
         affiliate: "https://midjourney.com?ref=aitools",
-        logo: "https://midjourney.com/favicon-32x32.png",
+        logo: "🎨",
         tags: ["image", "generation", "art", "creative", "design", "ai-art"]
     },
     {
@@ -36,7 +36,7 @@ const aiTools = [
         pricing: "$10/month or $100/year",
         rating: 4.7,
         affiliate: "https://github.com/features/copilot?ref=aitools",
-        logo: "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg",
+        logo: "💻",
         tags: ["code", "programming", "developer", "github", "autocomplete", "coding-assistant"]
     },
     {
@@ -48,7 +48,7 @@ const aiTools = [
         pricing: "Pay per use / $15/month",
         rating: 4.8,
         affiliate: "https://openai.com/dall-e-3?ref=aitools",
-        logo: "https://cdn.openai.com/API/docs/images/dall-e.svg",
+        logo: "🖼️",
         tags: ["image", "text-to-image", "generation", "openai", "creative", "art"]
     },
     {
@@ -60,7 +60,7 @@ const aiTools = [
         pricing: "$39-125/month",
         rating: 4.6,
         affiliate: "https://www.jasper.ai?ref=aitools",
-        logo: "https://www.jasper.ai/favicon.ico",
+        logo: "✍️",
         tags: ["writing", "marketing", "content", "copywriting", "seo", "blog"]
     },
     {
@@ -72,7 +72,7 @@ const aiTools = [
         pricing: "$25-225/month",
         rating: 4.7,
         affiliate: "https://www.synthesia.io?ref=aitools",
-        logo: "https://www.synthesia.io/favicon.png",
+        logo: "🎬",
         tags: ["video", "avatar", "text-to-speech", "tts", "video-generation", "animation"]
     },
     {
@@ -84,7 +84,7 @@ const aiTools = [
         pricing: "Free / $12-55/month",
         rating: 4.6,
         affiliate: "https://runwayml.com?ref=aitools",
-        logo: "https://runwayml.com/favicon.ico",
+        logo: "🎥",
         tags: ["video", "editing", "generation", "effects", "motion", "creative"]
     },
     {
@@ -96,7 +96,7 @@ const aiTools = [
         pricing: "Free / $19-299/month",
         rating: 4.5,
         affiliate: "https://murf.ai?ref=aitools",
-        logo: "https://murf.ai/favicon.ico",
+        logo: "🎙️",
         tags: ["voice", "audio", "text-to-speech", "voiceover", "tts", "narration"]
     },
     {
@@ -108,7 +108,7 @@ const aiTools = [
         pricing: "$8-10/month (add-on)",
         rating: 4.5,
         affiliate: "https://notion.so?ref=aitools",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+        logo: "📝",
         tags: ["productivity", "notes", "organization", "writing", "brainstorming", "workspace"]
     },
     {
@@ -120,7 +120,7 @@ const aiTools = [
         pricing: "Free / $12/month",
         rating: 4.7,
         affiliate: "https://www.grammarly.com?ref=aitools",
-        logo: "https://www.grammarly.com/favicon.ico",
+        logo: "✅",
         tags: ["writing", "grammar", "editing", "checker", "plagiarism", "proofreading"]
     },
     {
@@ -132,7 +132,7 @@ const aiTools = [
         pricing: "Free / $49+/month",
         rating: 4.5,
         affiliate: "https://www.copy.ai?ref=aitools",
-        logo: "https://www.copy.ai/favicon.ico",
+        logo: "📢",
         tags: ["copywriting", "marketing", "content", "social-media", "email", "sales"]
     },
     {
@@ -144,7 +144,7 @@ const aiTools = [
         pricing: "Free / $99+/month",
         rating: 4.4,
         affiliate: "https://mixo.io?ref=aitools",
-        logo: "https://mixo.io/favicon.ico",
+        logo: "🌐",
         tags: ["website", "builder", "no-code", "landing-page", "seo", "cms"]
     },
     {
@@ -156,7 +156,7 @@ const aiTools = [
         pricing: "Free",
         rating: 4.6,
         affiliate: "https://stablediffusionweb.com?ref=aitools",
-        logo: "https://stablediffusionweb.com/favicon.ico",
+        logo: "🎨",
         tags: ["image", "generation", "open-source", "art", "free", "customizable"]
     },
     {
@@ -168,7 +168,7 @@ const aiTools = [
         pricing: "Free (with Google account)",
         rating: 4.5,
         affiliate: "https://bard.google.com?ref=aitools",
-        logo: "https://www.gstatic.com/images/branding/product/1x/bard_logo_3x_v1.svg",
+        logo: "🤖",
         tags: ["chatbot", "conversation", "google", "writing", "translation", "ai"]
     },
     {
@@ -180,7 +180,7 @@ const aiTools = [
         pricing: "Free / $25-83/month",
         rating: 4.6,
         affiliate: "https://www.typeform.com?ref=aitools",
-        logo: "https://www.typeform.com/favicon.ico",
+        logo: "📊",
         tags: ["survey", "form", "analytics", "data", "insights", "feedback"]
     }
 ];
@@ -257,13 +257,26 @@ function renderTools(toolsToRender = aiTools) {
     toolsToRender.forEach(tool => {
         const toolCard = toolTemplate.content.cloneNode(true);
         
-        // Add logo
-        const logoImg = toolCard.querySelector('.tool-logo');
-        logoImg.src = tool.logo;
-        logoImg.alt = `${tool.name} logo`;
-        logoImg.onerror = function() {
-            this.style.display = 'none';
-        };
+        // Add logo - check if it's an emoji or URL
+        const logoContainer = toolCard.querySelector('.tool-logo-container');
+        
+        if (tool.logo.match(/^[\p{Emoji_Presentation}\p{Extended_Pictographic}]/u)) {
+            // It's an emoji - display as text
+            const emojiDiv = document.createElement('div');
+            emojiDiv.style.fontSize = '48px';
+            emojiDiv.style.display = 'flex';
+            emojiDiv.style.alignItems = 'center';
+            emojiDiv.style.justifyContent = 'center';
+            emojiDiv.style.height = '100%';
+            emojiDiv.textContent = tool.logo;
+            logoContainer.innerHTML = '';
+            logoContainer.appendChild(emojiDiv);
+        } else {
+            // It's a URL
+            const logoImg = toolCard.querySelector('.tool-logo');
+            logoImg.src = tool.logo;
+            logoImg.alt = `${tool.name} logo`;
+        }
         
         toolCard.querySelector('.tool-name').textContent = tool.name;
         toolCard.querySelector('.tool-category').textContent = capitalizeCategory(tool.category);
