@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory - Find & Compare Best AI Tools</title>
+    <meta name="description" content="Discover the best AI tools and generators. Compare features, read reviews, and find the perfect tool for your needs with affiliate links.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🤖 AI Tools Directory</h1>
+                <p>Discover the best AI tools & generators</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Find Your Perfect AI Tool</h2>
+            <p>Browse hundreds of AI tools, read honest reviews, and discover tools that fit your workflow</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search AI tools...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <h3>Filter by Category</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="writing">Writing</button>
+                <button class="filter-btn" data-category="image">Image Generation</button>
+                <button class="filter-btn" data-category="code">Code</button>
+                <button class="filter-btn" data-category="video">Video</button>
+                <button class="filter-btn" data-category="voice">Voice & Audio</button>
+                <button class="filter-btn" data-category="productivity">Productivity</button>
+                <button class="filter-btn" data-category="analytics">Analytics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Card Template (hidden) -->
+    <template id="toolTemplate">
+        <div class="tool-card">
+            <div class="tool-header">
+                <h3 class="tool-name"></h3>
+                <span class="tool-category"></span>
+            </div>
+            <p class="tool-description"></p>
+            <div class="tool-features">
+                <h4>Key Features:</h4>
+                <ul class="features-list"></ul>
+            </div>
+            <div class="tool-pricing">
+                <p><strong>Pricing:</strong> <span class="price"></span></p>
+            </div>
+            <div class="tool-rating">
+                <p><strong>Rating:</strong> <span class="rating"></span> ⭐</p>
+            </div>
+            <div class="tool-footer">
+                <a href="#" class="btn btn-primary affiliate-link" target="_blank">Visit Tool</a>
+                <button class="btn btn-secondary read-more">Read Review</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Tools Directory. All rights reserved.</p>
+            <p>We earn affiliate commissions from some of the tools listed. This helps support the site.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a> | 
+                <a href="#terms">Terms of Service</a> | 
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ads Section (Google AdSense placeholder) -->
+    <div class="ads-container">
+        <!-- Google AdSense ads will be placed here -->
+        <p style="text-align: center; color: #999; font-size: 12px;">Advertisement</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
