@@ -12,7 +12,8 @@ const aiTools = [
         pricing: "Free / $20/month",
         rating: 4.9,
         affiliate: "https://openai.com/chatgpt?ref=aitools",
-        logo: "https://cdn.openai.com/API/docs/images/chatgpt-icon.svg"
+        logo: "https://cdn.openai.com/API/docs/images/chatgpt-icon.svg",
+        tags: ["chatbot", "ai", "writing", "coding", "analysis", "openai"]
     },
     {
         id: 2,
@@ -23,7 +24,8 @@ const aiTools = [
         pricing: "$10-60/month",
         rating: 4.8,
         affiliate: "https://midjourney.com?ref=aitools",
-        logo: "https://midjourney.com/favicon-32x32.png"
+        logo: "https://midjourney.com/favicon-32x32.png",
+        tags: ["image", "generation", "art", "creative", "design", "ai-art"]
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ const aiTools = [
         pricing: "$10/month or $100/year",
         rating: 4.7,
         affiliate: "https://github.com/features/copilot?ref=aitools",
-        logo: "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+        logo: "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg",
+        tags: ["code", "programming", "developer", "github", "autocomplete", "coding-assistant"]
     },
     {
         id: 4,
@@ -45,7 +48,8 @@ const aiTools = [
         pricing: "Pay per use / $15/month",
         rating: 4.8,
         affiliate: "https://openai.com/dall-e-3?ref=aitools",
-        logo: "https://cdn.openai.com/API/docs/images/dall-e.svg"
+        logo: "https://cdn.openai.com/API/docs/images/dall-e.svg",
+        tags: ["image", "text-to-image", "generation", "openai", "creative", "art"]
     },
     {
         id: 5,
@@ -56,7 +60,8 @@ const aiTools = [
         pricing: "$39-125/month",
         rating: 4.6,
         affiliate: "https://www.jasper.ai?ref=aitools",
-        logo: "https://www.jasper.ai/favicon.ico"
+        logo: "https://www.jasper.ai/favicon.ico",
+        tags: ["writing", "marketing", "content", "copywriting", "seo", "blog"]
     },
     {
         id: 6,
@@ -67,7 +72,8 @@ const aiTools = [
         pricing: "$25-225/month",
         rating: 4.7,
         affiliate: "https://www.synthesia.io?ref=aitools",
-        logo: "https://www.synthesia.io/favicon.png"
+        logo: "https://www.synthesia.io/favicon.png",
+        tags: ["video", "avatar", "text-to-speech", "tts", "video-generation", "animation"]
     },
     {
         id: 7,
@@ -78,7 +84,8 @@ const aiTools = [
         pricing: "Free / $12-55/month",
         rating: 4.6,
         affiliate: "https://runwayml.com?ref=aitools",
-        logo: "https://runwayml.com/favicon.ico"
+        logo: "https://runwayml.com/favicon.ico",
+        tags: ["video", "editing", "generation", "effects", "motion", "creative"]
     },
     {
         id: 8,
@@ -89,7 +96,8 @@ const aiTools = [
         pricing: "Free / $19-299/month",
         rating: 4.5,
         affiliate: "https://murf.ai?ref=aitools",
-        logo: "https://murf.ai/favicon.ico"
+        logo: "https://murf.ai/favicon.ico",
+        tags: ["voice", "audio", "text-to-speech", "voiceover", "tts", "narration"]
     },
     {
         id: 9,
@@ -100,7 +108,8 @@ const aiTools = [
         pricing: "$8-10/month (add-on)",
         rating: 4.5,
         affiliate: "https://notion.so?ref=aitools",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+        tags: ["productivity", "notes", "organization", "writing", "brainstorming", "workspace"]
     },
     {
         id: 10,
@@ -111,7 +120,8 @@ const aiTools = [
         pricing: "Free / $12/month",
         rating: 4.7,
         affiliate: "https://www.grammarly.com?ref=aitools",
-        logo: "https://www.grammarly.com/favicon.ico"
+        logo: "https://www.grammarly.com/favicon.ico",
+        tags: ["writing", "grammar", "editing", "checker", "plagiarism", "proofreading"]
     },
     {
         id: 11,
@@ -122,7 +132,8 @@ const aiTools = [
         pricing: "Free / $49+/month",
         rating: 4.5,
         affiliate: "https://www.copy.ai?ref=aitools",
-        logo: "https://www.copy.ai/favicon.ico"
+        logo: "https://www.copy.ai/favicon.ico",
+        tags: ["copywriting", "marketing", "content", "social-media", "email", "sales"]
     },
     {
         id: 12,
@@ -133,7 +144,8 @@ const aiTools = [
         pricing: "Free / $99+/month",
         rating: 4.4,
         affiliate: "https://mixo.io?ref=aitools",
-        logo: "https://mixo.io/favicon.ico"
+        logo: "https://mixo.io/favicon.ico",
+        tags: ["website", "builder", "no-code", "landing-page", "seo", "cms"]
     },
     {
         id: 13,
@@ -144,7 +156,8 @@ const aiTools = [
         pricing: "Free",
         rating: 4.6,
         affiliate: "https://stablediffusionweb.com?ref=aitools",
-        logo: "https://stablediffusionweb.com/favicon.ico"
+        logo: "https://stablediffusionweb.com/favicon.ico",
+        tags: ["image", "generation", "open-source", "art", "free", "customizable"]
     },
     {
         id: 14,
@@ -155,7 +168,8 @@ const aiTools = [
         pricing: "Free (with Google account)",
         rating: 4.5,
         affiliate: "https://bard.google.com?ref=aitools",
-        logo: "https://www.gstatic.com/images/branding/product/1x/bard_logo_3x_v1.svg"
+        logo: "https://www.gstatic.com/images/branding/product/1x/bard_logo_3x_v1.svg",
+        tags: ["chatbot", "conversation", "google", "writing", "translation", "ai"]
     },
     {
         id: 15,
@@ -166,7 +180,8 @@ const aiTools = [
         pricing: "Free / $25-83/month",
         rating: 4.6,
         affiliate: "https://www.typeform.com?ref=aitools",
-        logo: "https://www.typeform.com/favicon.ico"
+        logo: "https://www.typeform.com/favicon.ico",
+        tags: ["survey", "form", "analytics", "data", "insights", "feedback"]
     }
 ];
 
@@ -182,6 +197,50 @@ const toolTemplate = document.getElementById('toolTemplate');
 
 let currentFilter = 'all';
 let currentSearch = '';
+let searchResults = [];
+
+// ===========================
+// Smart Search Function
+// ===========================
+
+function smartSearch(query) {
+    if (!query.trim()) return aiTools;
+    
+    const q = query.toLowerCase();
+    
+    // Score each tool based on relevance
+    const scored = aiTools.map(tool => {
+        let score = 0;
+        
+        // Exact name match (highest priority)
+        if (tool.name.toLowerCase() === q) score += 100;
+        // Name starts with query
+        else if (tool.name.toLowerCase().startsWith(q)) score += 80;
+        // Name contains query
+        else if (tool.name.toLowerCase().includes(q)) score += 60;
+        
+        // Description match
+        if (tool.description.toLowerCase().includes(q)) score += 40;
+        
+        // Tag match
+        if (tool.tags.some(tag => tag.includes(q))) score += 50;
+        if (tool.tags.some(tag => tag === q)) score += 70;
+        
+        // Category match
+        if (tool.category.includes(q)) score += 30;
+        
+        // Feature match
+        if (tool.features.some(f => f.toLowerCase().includes(q))) score += 25;
+        
+        return { tool, score };
+    });
+    
+    // Filter out zero scores and sort by score
+    return scored
+        .filter(s => s.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map(s => s.tool);
+}
 
 // ===========================
 // Render Tools
@@ -254,19 +313,14 @@ function capitalizeCategory(category) {
 function filterAndSearch() {
     let filtered = aiTools;
 
+    // Apply smart search if there's a search query
+    if (currentSearch.trim() !== '') {
+        filtered = smartSearch(currentSearch);
+    }
+    
     // Apply category filter
     if (currentFilter !== 'all') {
         filtered = filtered.filter(tool => tool.category === currentFilter);
-    }
-
-    // Apply search filter
-    if (currentSearch.trim() !== '') {
-        const searchTerm = currentSearch.toLowerCase();
-        filtered = filtered.filter(tool => 
-            tool.name.toLowerCase().includes(searchTerm) ||
-            tool.description.toLowerCase().includes(searchTerm) ||
-            tool.features.some(feature => feature.toLowerCase().includes(searchTerm))
-        );
     }
 
     renderTools(filtered);
@@ -286,7 +340,7 @@ filterButtons.forEach(button => {
     });
 });
 
-// Search functionality
+// Search functionality with smart search
 searchBtn.addEventListener('click', () => {
     currentSearch = searchInput.value;
     filterAndSearch();
@@ -299,8 +353,9 @@ searchInput.addEventListener('keypress', (e) => {
     }
 });
 
-searchInput.addEventListener('input', () => {
-    currentSearch = searchInput.value;
+// Real-time search with smart algorithm
+searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value;
     filterAndSearch();
 });
 
@@ -327,5 +382,5 @@ function showReview(tool) {
 
 renderTools();
 
-console.log('%c🤖 AI Tools Directory v1.5', 'color: #6366f1; font-size: 16px; font-weight: bold;');
-console.log(`%c${aiTools.length} AI tools with logos ready to explore`, 'color: #8b5cf6; font-size: 14px;');
+console.log('%c🤖 AI Tools Directory v1.5 - Smart Search Enabled', 'color: #6366f1; font-size: 16px; font-weight: bold;');
+console.log(`%c${aiTools.length} AI tools with intelligent search ready to explore`, 'color: #8b5cf6; font-size: 14px;');
